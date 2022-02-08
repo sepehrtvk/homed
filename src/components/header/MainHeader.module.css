@@ -9,3 +9,9 @@
   background-position: center;
   height: 60vh;
 }
+
+@media screen and (max-width: 480px) {
+    .bgBack {
+        height: 80vh; 
+    }
+  }

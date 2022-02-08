@@ -7,7 +7,9 @@ import HeaderBox from "./HeaderBox";
 
 const MainHeader = () => {
   return (
-    <div className={`${classes.bgBack} d-flex flex-column justify-content-between pb-md-5`}>
+    <div
+      className={`${classes.bgBack} d-flex flex-column justify-content-md-between pb-md-5`}
+    >
       <Navbar expand="lg">
         <Container>
           <Navbar.Brand href="#home" className="fw-bold fs-4">
@@ -32,19 +34,23 @@ const MainHeader = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-          </Navbar.Collapse>
-          <div className="d-flex align-items-center">
-            <Button to="/auth" className="btn btn-primary">
-              <BsFillPersonFill className="me-1" />
-              ورود
-            </Button>
-            <div className="ms-4 border-start ps-3">
-              <FaPhoneAlt />
-              <span className="ms-1">۰۹۱۲۰۵۳۲۰۲۰</span>
+            <div className="d-flex align-items-center">
+              <Button to="/auth" className="btn btn-primary">
+                <BsFillPersonFill className="me-1" />
+                ورود
+              </Button>
+              <div className="ms-4 border-start ps-3">
+                <FaPhoneAlt />
+                <span className="ms-1">۰۹۱۲۰۵۳۲۰۲۰</span>
+              </div>
             </div>
-          </div>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Container className="text-white">
+        <h1 className="mb-5" >هوم دی</h1>
+        <h3>انتخاب هوشنمد خانه</h3>
+      </Container>
       <HeaderBox />
     </div>
   );
