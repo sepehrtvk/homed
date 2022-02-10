@@ -6,16 +6,16 @@ const DecorSection = () => {
     <div className={`${classes.bgDecor}`}>
       <div className="container">
         <div className="row">
-          <div className="col-md-6 pe-md-0">
+          <div className="col-md-6 ps-md-0">
             <img
               src={couchPhoto}
               alt="couchPhoto"
-              className="w-100 rounded-start"
+              className="w-100 rounded-end"
               height="350px"
             />
           </div>
-          <div className="col-md-6 ps-md-0">
-            <div className="bg-light rounded-end text-center py-5 h-100">
+          <div className="col-md-6 pe-md-0">
+            <div className="bg-light rounded-start text-center py-5 h-100">
               <h3>دکوراسیون داخلی خانه را به ما بسپارید</h3>
               <hr
                 className="w-50 text-secondary my-4 mx-auto"

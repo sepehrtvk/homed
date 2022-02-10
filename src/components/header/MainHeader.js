@@ -16,8 +16,8 @@ const MainHeader = () => {
             هوم دی
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+          <Navbar.Collapse className=" justify-content-between" id="basic-navbar-nav">
+            <Nav>
               <Nav.Link href="#home">خانه</Nav.Link>
               <Nav.Link href="#link">Link</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -35,13 +35,13 @@ const MainHeader = () => {
               </NavDropdown>
             </Nav>
             <div className="d-flex align-items-center">
-              <Button to="/auth" className="btn btn-primary">
-                <BsFillPersonFill className="me-1" />
+              <Button to="/auth">
+                <BsFillPersonFill className="ms-1" />
                 ورود
               </Button>
-              <div className="ms-4 border-start ps-3">
+              <div className="me-4 border-end pe-3 text-white">
                 <FaPhoneAlt />
-                <span className="ms-1">۰۹۱۲۰۵۳۲۰۲۰</span>
+                <span className="me-1">۰۹۱۲۰۵۳۲۰۲۰</span>
               </div>
             </div>
           </Navbar.Collapse>
